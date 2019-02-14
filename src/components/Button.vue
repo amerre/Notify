@@ -12,11 +12,6 @@ export default {
       set(value) {
         this.$store.commit("POPUP_COMMIT", value);
       }
-    },
-    updated: function() {
-      this.$nextTick(function() {
-        console.log("hello");
-      });
     }
   }
 };
