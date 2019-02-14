@@ -1,5 +1,7 @@
 <template>
-  <button @click="showPopup++">Notify me - {{ showPopup }}</button>
+  <div class="wrapper">
+    <button @click="showPopup++">Notify me - {{ showPopup }}</button>
+  </div>
 </template>
 
 <script>
@@ -16,3 +18,16 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  button {
+    font-size: 20px;
+    color: red;
+  }
+}
+</style>

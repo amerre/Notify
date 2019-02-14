@@ -5,14 +5,14 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    popup: 0
+    popup: 1
   },
   mutations: {
     POPUP_COMMIT(state, payload) {
       state.popup = payload;
       setTimeout(function() {
         state.popup -= 1;
-      }, 1000);
+      }, 2000);
     }
   },
   actions: {}

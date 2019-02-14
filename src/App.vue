@@ -18,9 +18,9 @@ export default {
 </script>
 
 <style lang="scss">
-@import "./assets/main.scss";
+@import "./assets/reset.scss";
 
 #app {
-  margin: 20px;
+  height: 100vh;
 }
 </style>
