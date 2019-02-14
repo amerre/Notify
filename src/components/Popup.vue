@@ -7,6 +7,8 @@
 </template>
 
 <style lang="scss">
+@import "../assets/variables.scss";
+
 // Le wrapper ou sont toutes les popups
 .popups {
   display: flex;
@@ -16,7 +18,7 @@
   right: 0;
   // Une seule popup
   .popup {
-    border: 2px solid #ffc600;
+    border: 2px solid $yellow;
     width: 200px;
     height: 60px;
     font-size: 25px;
@@ -24,7 +26,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffc600;
+    background-color: $yellow;
   }
 }
 

@@ -21,19 +21,21 @@ export default {
 </script>
 
 <style lang="scss">
+@import "../assets/variables.scss";
+
 // Le bouton central
 button {
   cursor: pointer;
   font-size: 25px;
   padding: 10px 60px;
   outline: none;
-  background-color: #ffc600;
+  background-color: $yellow;
   border: none;
   border-radius: 5px;
-  box-shadow: 0 9px grey;
+  box-shadow: 0 9px lightgrey;
   &:active {
-    background-color: darken(#ffc600, 5%);
-    box-shadow: 0 5px darken(grey, 15%);
+    background-color: darken($yellow, 5%);
+    box-shadow: 0 5px darken($grey, 15%);
     transform: translateY(4px);
   }
 }
@@ -44,6 +46,7 @@ button {
     align-items: flex-end !important;
     button {
       width: 100vh;
+      margin-bottom: 15px;
     }
   }
 }
