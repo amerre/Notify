@@ -18,9 +18,15 @@ export default {
 </script>
 
 <style lang="scss">
-@import "./assets/reset.scss";
-
-#app {
+// Layout
+body {
   height: 100vh;
+  overflow: hidden;
+  #app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
 }
 </style>
