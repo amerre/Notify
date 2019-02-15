@@ -1,7 +1,11 @@
 <template>
   <div class="popups">
     <transition-group name="slide">
-      <div class="popup" v-for="(popup, index) in this.$store.state.popups" :key="index + 1">Hey</div>
+      <div
+        class="popup"
+        v-for="(popup, index) in $store.state.popups"
+        :key="index + 1"
+      >{{ $store.state.text }}</div>
     </transition-group>
   </div>
 </template>
@@ -11,11 +15,13 @@
 
 // Le wrapper ou sont toutes les popups
 .popups {
-  display: flex;
-  flex-direction: column-reverse;
   position: absolute;
   bottom: 0;
   right: 0;
+  span {
+    display: flex;
+    flex-direction: column-reverse;
+  }
   // Une seule popup
   .popup {
     border: 2px solid $yellow;
@@ -27,6 +33,7 @@
     justify-content: center;
     align-items: center;
     background-color: $yellow;
+    overflow: hidden;
   }
 }
 
@@ -47,7 +54,7 @@
 // Responsive
 @media (max-width: 700px) {
   .popups {
-    margin-bottom: 50px;
+    margin-bottom: 200px;
   }
 }
 </style>

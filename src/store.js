@@ -5,6 +5,8 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    popups: []
+    popups: [],
+    text: "I'm a popup!",
+    timeout: 2
   }
 });
