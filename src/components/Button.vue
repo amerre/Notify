@@ -1,5 +1,5 @@
 <template>
-  <div class="buttonWrapper">
+  <div>
     <div class="inputs">
       <label>Text to display</label>
       <input type="text" v-model="$store.state.text">
@@ -30,29 +30,27 @@ export default {
 <style lang="scss">
 @import "../assets/variables.scss";
 
-.buttonWrapper {
-  // Le bouton central
-  button {
-    cursor: pointer;
-    font-size: 25px;
-    padding: 10px 60px;
-    outline: none;
-    background-color: $yellow;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 9px $grey;
-    &:active {
-      background-color: darken($yellow, 5%);
-      box-shadow: 0 5px darken($grey, 15%);
-      transform: translateY(4px);
-    }
+// Le bouton central
+button {
+  cursor: pointer;
+  font-size: 25px;
+  padding: 10px 60px;
+  outline: none;
+  background-color: $yellow;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 9px $grey;
+  &:active {
+    background-color: darken($yellow, 5%);
+    box-shadow: 0 5px darken($grey, 15%);
+    transform: translateY(4px);
   }
-  // Les inputs et les labels
-  .inputs {
-    display: grid;
-    grid-gap: 10px;
-    margin-bottom: 10px;
-  }
+}
+// Les inputs et les labels
+.inputs {
+  display: grid;
+  grid-gap: 10px;
+  margin-bottom: 10px;
 }
 
 // Responsive
